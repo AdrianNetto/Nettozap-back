@@ -33,7 +33,7 @@ app.get("/test", (req, res) => {
 });
 
 app.use(async (req, res, next) => {
-  next(createHttpError.NotFound("This route doesn't exist :("))
+  next(createHttpError.NotFound("This route doesn't exist :("));
 });
 
 app.use(async (err, req, res, next) => {
