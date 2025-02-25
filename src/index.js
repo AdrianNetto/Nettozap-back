@@ -10,7 +10,7 @@ mongoose.createConnection("error", (err) => {
   process.exit(1);
 });
 
-if(process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV !== "production") {
   mongoose.set("debug", true);
 }
 
